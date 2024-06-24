@@ -1,0 +1,115 @@
+/* NOTE: There are some accessibility concerns
+ * with color contrast and minimum font-size, but
+ * I'm keeping with the mocks / would discuss.
+ */
+
+ .card {
+  position: relative;
+
+  &:hover {
+    z-index: 2;
+
+    .card__container {
+      opacity: 1;
+    }
+
+    .card__img--main {
+      animation: 0.4s ease-in both imageAnimation;
+    }
+  }
+ }
+
+.card__img--main {
+  position: relative;
+  max-height: 52.2rem;
+  z-index: 1;
+}
+
+@keyframes imageAnimation {
+  0%   { opacity: 1; scale: 1; transform: translateX(0); transform-origin: right; }
+  99%  { opacity: 1; scale: 0.965; transform: translateX(0.4rem); }
+  100% { opacity: 0; }
+}
+
+.card__container {
+  position: absolute;
+  display: flex;
+  gap: 2rem;
+  padding: 0.8rem 2rem 0.8rem 0.8rem;
+  top: 0;
+  max-width: 54.8rem;
+  border: 1px solid var(--c-clay);
+  border-radius: var(--border-radius);
+  background: var(--c-steel);
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.15s ease-in;
+}
+
+.card__img {
+  max-height: 50.4rem;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.6rem;
+}
+
+.card__eyebrow,
+.card__description {
+  font-size: 1.4rem;  
+  color: var(--c-lavender);
+}
+
+.card__eyebrow {
+  margin-bottom: 0.4rem;
+}
+
+.card__description {
+  margin-bottom: 2rem;
+}
+
+.card__title {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.card__stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__stat {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--c-border-alt);
+  color: var(--c-lavender);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  span:last-child {
+    color: var(--c-text);
+  }
+}
+
+.card__actions {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 1.6rem;
+
+  .button {
+    margin-left: 0.8rem;
+    flex: 1;
+  }
+
+  .button,
+  .button-icon {
+    margin-bottom: 0;
+  }
+}

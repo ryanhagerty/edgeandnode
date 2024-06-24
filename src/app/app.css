@@ -1,3 +1,61 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "components/00-base/variables.css";
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 1.6rem;
+  background: var(--c-bg);
+  color: var(--c-text);
+
+  @media (--large) {
+    font-size: 2.8rem;
+  }
+}
+
+.body--lrg {
+  font-size: 2.4rem;
+
+  @media (--large) {
+    font-size: 3.2rem;
+  }
+}
+
+.body--sm {
+  font-size: 1.6rem;
+
+  @media (--large) {
+    font-size: 2.4rem;
+  }
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+a,
+button {
+  &:focus {
+    border: 1px solid var(--c-focus);
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.intro-container {
+  max-width: 64rem;
+}

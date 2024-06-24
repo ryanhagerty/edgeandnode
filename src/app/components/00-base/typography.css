@@ -1,0 +1,48 @@
+.body--lrg {
+  font-size: 2.4rem;
+
+  @media (--large) {
+    font-size: 3.2rem;
+  }
+}
+
+.body--md {
+  font-size: 2rem;
+
+  @media (--large) {
+    font-size: 2.8rem;
+  }
+}
+
+.body--sm {
+  font-size: 1.6rem;
+  font-weight: regular;
+
+  @media (--large) {
+    font-size: 2.4rem;
+  }
+}
+
+.caption--lrg {
+  font-size: 1.4rem;
+
+  @media (--large) {
+    font-size: 2rem;
+  }
+}
+
+.caption--md {
+  font-size: 1.2rem;
+
+  @media (--large) {
+    font-size: 1.6rem;
+  }
+}
+
+.caption--sm {
+  font-size: 1rem;
+
+  @media (--large) {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,19 @@
+.button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.6rem;
+  padding: 0 1.2rem;
+  min-height: 4rem;
+  border: 1px solid var(--c-border);
+  border-radius: var(--border-radius);
+
+  &:hover,
+  &:focus {
+    background: var(--c-btn-icon);
+  }
+
+  &:active {
+    background: var(--c-btn-icon-hvr);
+  }
+}

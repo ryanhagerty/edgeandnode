@@ -1,0 +1,33 @@
+:root {
+  --pseudo-border: -0.3125rem;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.6rem;
+  max-width: 21rem;
+  min-height: 4rem;
+  margin-bottom: 1.6rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  border-radius: var(--border-radius-lrg);
+  border: 0.2rem solid transparent;
+  color: var(--c-text);
+  background: var(--c-bg);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: var(--pseudo-border);
+    bottom: var(--pseudo-border);
+    left: var(--pseudo-border);
+    right: var(--pseudo-border);
+    background: var(--c-funky);
+    z-index: -1;
+    border-radius: var(--border-radius-lrg);
+  }
+}
+

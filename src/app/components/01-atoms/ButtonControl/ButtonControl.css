@@ -1,0 +1,31 @@
+.button-control {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.6rem;
+  padding: 0.2rem;
+  min-height: 4rem;
+  font-size: 1.2rem;
+  background: var(--c-steel);
+  border: 1px solid var(--c-border-alt);
+  border-radius: var(--border-radius-lrg);
+}
+
+.button-control__option {
+  padding: 1rem 1.6rem;
+  color: var(--c-lavender);
+  transition: all 0.2s ease-in;
+}
+
+.button-control--on {
+  background: var(--c-white);
+  border-radius: var(--border-radius-lrg);
+  color: var(--c-midnight);
+}
+
+.button-control--off {
+  &:hover {
+    color: var(--c-text);
+  }
+}
+
+

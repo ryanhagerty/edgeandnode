@@ -1,0 +1,22 @@
+.cardrow {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 13rem;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, var(--c-transparent) 50%, var(--c-midnight) 100%);
+    z-index: 2;
+  }
+}
+
+.cardrow__container {
+  display: flex;
+  gap: 2rem;
+  overflow-y: auto;
+}
+

@@ -1,0 +1,36 @@
+:root {
+  /* Colors */
+  --c-transparent: #FFFFFF00;
+  --c-white: #FFFFFF;
+  --c-midnight: #0C0A1D;
+  --c-smokey: #6F6D8A;
+  --c-lavender: #8682B1;
+  --c-clay: #36344B;
+  --c-steel: #1F1D2F;
+  --c-royal-purple: #6F4CFF;
+  --c-funky: linear-gradient(90deg, #FF00A8 0%, #00E0FF 100%);
+  --c-royal: linear-gradient(180deg, var(--c-royal-purple) 0%, #432E99 100%);
+  --c-royal-alt: linear-gradient(180deg, #7E5FFD 0%, #5B45B3 100%);
+  --c-royal-light: linear-gradient(180deg, #553EB5 0%, var(--c-royal-purple) 100%);
+
+  /* Color abstractions */
+  --c-bg: var(--c-midnight);
+  --c-text: var(--c-white);
+  --c-btn: var(--c-royal);
+  --c-btn-hvr: var(--c-royal-alt);
+  --c-btn-act: var(--c-royal-light);
+  --c-focus: var(--c-white);
+  --c-border: var(--c-smokey);
+  --c-border-alt: var(--c-clay);
+  --c-btn-icon: var(--c-smokey);
+  --c-btn-icon-hvr: var(--c-clay);
+
+  /* Misc. */
+  --border-radius: 0.6rem;
+  --border-radius-lrg: 5rem;
+
+  /* Margins/paddings (Vertical Rhythm)
+   * NOTE: Here is where I would work with design to establish
+   * spacing variables
+   */
+}

@@ -1,0 +1,28 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20rem;
+  margin-bottom: 1.6rem;
+  padding: 1rem 1.2rem;
+  border-radius: var(--border-radius);
+  font-size: 1.4rem;
+  font-family: var(--font-inter), sans-serif;
+  line-height: 2rem;
+  background: var(--c-btn);
+  color: var(--c-text);
+
+  &:hover {
+    background: var(--c-btn-hvr);
+  }
+
+  &:active {
+    background: var(--c-btn-act);
+  }
+}
+
+
+.button--sm {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
