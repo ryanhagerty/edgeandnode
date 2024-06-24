@@ -9,22 +9,23 @@ import Button from "../../01-atoms/Button/Button";
 
 declare type CardProps = {
   className?: string;
+  cardType?: boolean;
 };
 
-const Card: React.FC<CardProps> = ({ className }) => {
+const Card: React.FC<CardProps> = ({ className, cardType }) => {
   const classes = className ? className : "";
 
   return (
-    <div className={`card ${classes}`}>
+    <div className={`card ${(cardType === false) ? `card--watch` : ''} ${classes}`}>
       <img
         className="card__img--main"
-        src={demoImg.src}
+        src={(cardType === false) ? demoImgWatch.src : demoImg.src}
         alt="sample demo img"
       />
       <div className='card__container'>
         <img
           className="card__img"
-          src={demoImg.src}
+          src={(cardType === false) ? demoImgWatch.src : demoImg.src}
           alt="sample demo img"
           aria-hidden="true"
         />
@@ -44,6 +45,9 @@ const Card: React.FC<CardProps> = ({ className }) => {
             </div>
           </div>
         </div>
+        {/* NOTE: Inquire with design why button text / UX is different for mobile
+          * on the mocks (no ButtonIcon / Download text is Save)
+          */}
         <div className="card__actions">
           <ButtonIcon/>
           <Button>Download</Button>

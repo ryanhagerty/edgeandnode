@@ -8,6 +8,7 @@
 
 /* NOTE: Here I would ask design about employing responsive
  * typography such as clamp(4rem, 5vw, 7.2rem);
+ * Also separate all out into a dedicated typography system
 */
 .display--lrg {
   font-size: 6.4rem;
@@ -18,7 +19,7 @@
 }
 
 .display--md {
-  font-size: 4.8rem;
+  font-size: 3.2rem;
 
   @media (--large) {
     font-size: 6.4rem;
@@ -54,5 +55,62 @@
 
   @media (--large) {
     font-size: 3.2rem;
+  }
+}
+
+.body-copy,
+.caption {
+  font-weight: 400;
+}
+
+.body-copy--lrg {
+  font-size: 2.4rem;
+
+  @media (--large) {
+    font-size: 3.2rem;
+  }
+}
+
+.body-copy--md {
+  font-size: 2rem;
+
+  @media (--large) {
+    font-size: 2.8rem;
+  }
+}
+
+.body-copy--sm {
+  font-size: 1.6rem;
+
+  @media (--large) {
+    font-size: 2.4rem;
+  }
+}
+
+.body-copy--alt {
+  color: var(--c-smokey);
+}
+
+.caption--lrg {
+  font-size: 1.4rem;
+
+  @media (--large) {
+    font-size: 2rem;
+  }
+}
+
+.caption--md {
+  font-size: 1.2rem;
+
+  @media (--large) {
+    font-size: 1.6rem;
+  }
+}
+
+.caption--sm {
+  font-size: 1rem;
+
+  @media (--large) {
+    font-size: 1.2rem;
   }
 }
