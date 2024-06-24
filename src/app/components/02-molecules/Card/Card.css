@@ -3,7 +3,7 @@
  * I'm keeping with the mocks / would discuss.
  */
 
- .card {
+.card {
   position: relative;
 
   &:hover,
@@ -15,7 +15,7 @@
       opacity: 1;
       z-index: 3;
     }
-    
+
     /* NOTE: Targets next two siblings to prevent
      * hover effect from triggering cards underneath
      * active one. This styling is gross and should
@@ -35,7 +35,7 @@
       }
     }
   }
- }
+}
 
 .card__img--main {
   position: relative;
@@ -81,7 +81,7 @@
 
 .card__eyebrow,
 .card__description {
-  font-size: 1.4rem;  
+  font-size: 1.4rem;
   color: var(--c-lavender);
 }
 
@@ -152,9 +152,19 @@
   }
 }
 
-
 @keyframes imageAnimation {
-  0%   { opacity: 1; scale: 1; transform: translateX(0); transform-origin: right; }
-  99%  { opacity: 1; scale: 0.965; transform: translateX(0.4rem); }
-  100% { opacity: 0; }
+  0% {
+    opacity: 1;
+    scale: 1;
+    transform: translateX(0);
+    transform-origin: right;
+  }
+  99% {
+    opacity: 1;
+    scale: 0.965;
+    transform: translateX(0.4rem);
+  }
+  100% {
+    opacity: 0;
+  }
 }

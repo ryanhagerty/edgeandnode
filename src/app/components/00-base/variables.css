@@ -1,17 +1,21 @@
 :root {
   /* Colors */
-  --c-transparent: #FFFFFF00;
-  --c-white: #FFFFFF;
-  --c-midnight: #0C0A1D;
-  --c-smokey: #6F6D8A;
-  --c-lavender: #8682B1;
-  --c-clay: #36344B;
-  --c-steel: #1F1D2F;
-  --c-royal-purple: #6F4CFF;
-  --c-funky: linear-gradient(90deg, #FF00A8 0%, #00E0FF 100%);
-  --c-royal: linear-gradient(180deg, var(--c-royal-purple) 0%, #432E99 100%);
-  --c-royal-alt: linear-gradient(180deg, #7E5FFD 0%, #5B45B3 100%);
-  --c-royal-light: linear-gradient(180deg, #553EB5 0%, var(--c-royal-purple) 100%);
+  --c-transparent: #ffffff00;
+  --c-white: #ffffff;
+  --c-midnight: #0c0a1d;
+  --c-smokey: #6f6d8a;
+  --c-lavender: #8682b1;
+  --c-clay: #36344b;
+  --c-steel: #1f1d2f;
+  --c-royal-purple: #6f4cff;
+  --c-funky: linear-gradient(90deg, #ff00a8 0%, #00e0ff 100%);
+  --c-royal: linear-gradient(180deg, var(--c-royal-purple) 0%, #432e99 100%);
+  --c-royal-alt: linear-gradient(180deg, #7e5ffd 0%, #5b45b3 100%);
+  --c-royal-light: linear-gradient(
+    180deg,
+    #553eb5 0%,
+    var(--c-royal-purple) 100%
+  );
 
   /* Color abstractions */
   --c-bg: var(--c-midnight);

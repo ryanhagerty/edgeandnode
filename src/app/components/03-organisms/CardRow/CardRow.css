@@ -9,7 +9,11 @@
     top: 0;
     bottom: 0;
     right: 0;
-    background: linear-gradient(90deg, var(--c-transparent) 50%, var(--c-midnight) 100%);
+    background: linear-gradient(
+      90deg,
+      var(--c-transparent) 50%,
+      var(--c-midnight) 100%
+    );
     z-index: 2;
   }
 }
@@ -19,4 +23,3 @@
   gap: 2rem;
   overflow-y: auto;
 }
-
