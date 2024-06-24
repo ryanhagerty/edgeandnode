@@ -1,9 +1,3 @@
-/* NOTE: Hi there! Cool design. I've left a lot of
- * notes lying around explaining my reasoning, but
- * would love to chat. I kept it pretty close to
- * spirit of the mocks for the goal of this being
- * an exercise, but I have other ideas for improvement.
- */
 'use client'
 import Header from './components/01-atoms/Header/Header'
 import Banner from './components/01-atoms/Banner/Banner'
